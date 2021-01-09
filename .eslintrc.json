@@ -11,6 +11,7 @@
   },
   "rules": {
     "no-unused-vars": [2, { "args": "all", "argsIgnorePattern": "^_+" }],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-template-curly-in-string": "off"
   }
 }
