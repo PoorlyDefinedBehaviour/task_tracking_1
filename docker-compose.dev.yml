@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  mysql-dev:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=task_tracking_1_dev
+    ports:
+      - 3307:3306
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    networks:
+      - task_tracking_1
+
+volumes:
+  mysql_data:
+
+networks:
+  task_tracking_1:
+    driver: bridge
