@@ -12,6 +12,8 @@
   "rules": {
     "no-unused-vars": [2, { "args": "all", "argsIgnorePattern": "^_+" }],
     "import/prefer-default-export": "off",
-    "no-template-curly-in-string": "off"
+    "no-template-curly-in-string": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off"
   }
 }

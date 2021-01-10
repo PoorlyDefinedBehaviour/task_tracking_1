@@ -1,5 +1,5 @@
 module.exports = {
-  rootDir: ".",
+  rootDir: "./src",
   testEnvironment: "node",
   testRegex: ".spec.js$",
   coverageDirectory: "./coverage",
