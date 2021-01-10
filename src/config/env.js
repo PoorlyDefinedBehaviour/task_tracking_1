@@ -6,9 +6,7 @@ const readEnvVariables = () => {
   const nodeEnv = process.env.NODE_ENV
 
   if (!nodeEnv || !allowedNodeEnvs.includes(nodeEnv)) {
-    throw new Error(
-      "NODE_ENV must at least be one of: [test, development, production]"
-    )
+    throw new Error(`NODE_ENV must at least be one of: ${allowedNodeEnvs}`)
   }
 
   if (nodeEnv === "test") {
