@@ -11,6 +11,7 @@
     "db:migrate": "NODE_ENV=development sequelize-cli db:migrate"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "fp-ts": "^2.9.3",
