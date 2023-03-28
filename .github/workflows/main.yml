@@ -57,7 +57,7 @@ jobs:
 
       - name: Push to dockerhub
         if: github.ref == 'refs/heads/main'
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: poorlydefinedbehaviour/task_tracking_1
           username: ${{ secrets.DOCKER_USERNAME }}
